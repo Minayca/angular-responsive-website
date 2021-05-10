@@ -1,0 +1,135 @@
+section {
+  padding: 0 7%;
+  padding-top: 8rem;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 0.7rem 3rem;
+  background: #ff6f61;
+  color: #fff;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background: #333;
+} 
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+header .heading {
+  font-size: 3rem;
+  color: #666;
+  padding: 1rem;
+  text-align: center;
+}
+
+header #menu {
+  font-size: 3rem;
+  color: #666;
+  cursor: pointer;
+  margin: 1rem;
+  display: none;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background: #ff6f61;
+  padding: 1rem;
+}
+
+header .navbar ul li {
+  margin: 0 1.5rem;
+}
+
+header .navbar ul li a {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header .navbar ul li a:hover {
+  color: #444;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: url(C:\Projeler\angular-responsive-website\angular-responsive-website\src\assets\images\home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}
+
+.home .image {
+  flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+}
+
+.home .content h1 {
+  font-size: 5rem;
+  color: #444;
+}
+
+.home .content p {
+  font-size: 1.8rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .content {
+    text-align: center;
+  }
+
+  .home .content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    padding-top: 5rem;
+  }
+}
